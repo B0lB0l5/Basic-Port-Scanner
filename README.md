@@ -1,62 +1,64 @@
-🔎 Simple Python Port Scanner
-Description
-This is a lightweight Port Scanner built in Python.
-It allows you to scan a range of ports on a given IP address to detect open ports.
-The tool uses the socket library to attempt TCP connections to each port within the specified range.
+# Port Scanner
 
-Features
-Scan any IP address for open TCP ports.
+This is a simple Python script that scans a range of ports on a target IP address to check for open ports. The script makes use of Python's `socket` library to attempt connections to the specified ports and reports which ones are open.
 
-Define custom start and end port ranges (0–65535).
+## Features
+- Scans a range of ports on a target IP address.
+- Reports open ports within the specified range.
+- Handles errors and connection issues.
 
-Quick timeout for faster scanning.
+## Prerequisites
+- Python 3.x (Recommended version: Python 3.6 or later)
 
-Validates the IP address format before scanning.
+## How to Use
 
-How to Use
-Clone or download the repository.
-
-Make sure you have Python 3 installed.
-
-Run the script:
+### 1. Clone the Repository
+To clone this repository, run the following command:
+```bash
+git clone https://github.com/yourusername/port-scanner.git
+2. Run the Script
+Navigate to the directory where you cloned the repository, then execute the script:
 
 bash
 Copy
 Edit
+cd port-scanner
 python port_scanner.py
-Enter the target IP address when prompted.
+3. Input
+The script will prompt you to enter:
 
-Enter the starting and ending ports you want to scan.
+The target IP address (e.g., 192.168.1.1).
 
-Example:
+The starting port (between 0 and 65535).
 
+The ending port (between 0 and 65535).
+
+Example
 bash
 Copy
 Edit
 Enter the IP address to scan: 192.168.1.1
-Enter the starting port (0-65535): 20
-Enter the ending port (0-65535): 80
-Example Output
+Enter the starting port (0-65535): 80
+Enter the ending port (0-65535): 100
+Scanning 192.168.1.1 from port 80 to 100...
+Port 80 is OPEN
+Port 443 is OPEN
+
+Open Ports: [80, 443]
+Error Handling
+Invalid IP address format.
+
+Invalid port range.
+
+Connection errors.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 bash
 Copy
 Edit
-Scanning 192.168.1.1 from port 20 to 80...
-Port 22 is OPEN
-Port 80 is OPEN
 
-Open Ports: [22, 80]
-Requirements
-Python 3.x
-
-(Uses only built-in Python libraries — no additional packages required.)
-
-Notes
-The script uses a timeout of 0.5 seconds for each port to ensure quick scanning.
-
-Designed for educational and authorized use only. Do not scan IPs without permission!
-
-License
-This project is open-source and available under the MIT License.
-
-Author
-B0lB0l
+### Notes:
+- Be sure to replace `https://github.com/yourusername/port-scanner.git` with the actual URL of your GitHub repository.
+- You can update the "LICENSE" link to reflect the license you choose for the repository
