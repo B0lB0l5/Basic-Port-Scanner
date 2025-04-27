@@ -51,14 +51,3 @@ Invalid IP address format.
 Invalid port range.
 
 Connection errors.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-bash
-Copy
-Edit
-
-### Notes:
-- Be sure to replace `https://github.com/yourusername/port-scanner.git` with the actual URL of your GitHub repository.
-- You can update the "LICENSE" link to reflect the license you choose for the repository
